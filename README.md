@@ -85,3 +85,44 @@ F-GAN + DRS (KLD, 50e)	~	↓	↑↑	↑↑
 ├── samples/                 # DRS-accepted images
 ├── README.md                # You're here!
 ```
+🧾 Dependencies
+```bash
+torch==2.0.1
+numpy==1.25.1
+scikit-learn==1.3.0
+scipy==1.11.1
+matplotlib
+```
+
+Install with:
+```bash
+pip install -r requirements.txt
+```
+🧪 Insights
+🔁 f-divergence choice affects convergence: JS diverges slower than BCE but provides more stable training.
+
+🎯 DRS boosts recall and image diversity at low computational cost.
+
+🧭 Optimal epochs vary by divergence: JS and KLD plateau early, while BCE improves slowly over time.
+
+📚 References
+Nowozin et al., f-GAN: Variational Divergence Minimization
+
+Azadi et al., Discriminator Rejection Sampling
+
+👥 Authors
+The GANtastics
+
+Lyna Bouikni
+
+Arij Boubaker
+
+Ángel Luque
+
+🧑‍🎓 M2 IASD — Université Paris Dauphine, 2023
+
+📬 Contact
+📫 Email: lynabouiknia@gmail.com
+🔗 LinkedIn
+
+“Precision means nothing without diversity — and diversity is everything in generative modeling.”
