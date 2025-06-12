@@ -81,13 +81,27 @@ F-GAN + DRS (KLD, 50e)	~	↓	↑↑	↑↑
 
 ## 📁 Code Structure
 ```bash
-├── fgan.py                  # F-GAN training logic
-├── drs.py                   # Discriminator Rejection Sampling implementation
-├── utils.py                 # Evaluation, divergence functions, helpers
-├── train_vanilla.py         # Vanilla GAN baseline training
-├── plots/                   # Generated image outputs
-├── samples/                 # DRS-accepted images
-├── README.md                # You're here!
+F-GAN-Rejection-Sampling/
+├── src/                   # Python code modules
+│   ├── train.py
+│   ├── generate.py
+│   ├── DRS.py
+│   ├── model.py
+│   ├── utils.py
+│   └── evaluation_metrics.py
+│
+├── Checkpoints/          # Trained models (e.g., D.pth)
+│
+├── docs/                 # Supporting files
+│   ├── Presentation.pdf
+│   └── Report.pdf
+│
+├── samples/              # Output images / visualizations
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
+
 ```
 🧾 Dependencies
 ```bash
