@@ -71,7 +71,7 @@ Dynamic Thresholding: M is updated online.
 
 Sample Selection: Repeats until 10,000 accepted samples are saved.
 
-📊 Results
+## 📊 Results
 Model	Time (s)	FID	Precision	Recall
 Vanilla GAN	111.4	52.44	0.52	0.18
 F-GAN (JS, 100 epochs)	~	~	↑	↑
@@ -79,7 +79,7 @@ F-GAN + DRS (KLD, 50e)	~	↓	↑↑	↑↑
 
 🔍 DRS significantly improved both precision and diversity compared to plain GANs.
 
-📁 Code Structure
+## 📁 Code Structure
 ```bash
 ├── fgan.py                  # F-GAN training logic
 ├── drs.py                   # Discriminator Rejection Sampling implementation
@@ -104,19 +104,21 @@ Install with:
 ```bash
 pip install -r requirements.txt
 ```
-🧪 Insights
+
+## 🧪 Insights
+
 🔁 f-divergence choice affects convergence: JS diverges slower than BCE but provides more stable training.
 
 🎯 DRS boosts recall and image diversity at low computational cost.
 
 🧭 Optimal epochs vary by divergence: JS and KLD plateau early, while BCE improves slowly over time.
 
-📚 References
+## 📚 References
 Nowozin et al., f-GAN: Variational Divergence Minimization
 
 Azadi et al., Discriminator Rejection Sampling
 
-👥 Authors
+## 👥 Authors
 The GANtastics
 
 Lyna Bouikni
