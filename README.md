@@ -45,4 +45,43 @@ Generator: z ∈ ℝ¹⁰⁰ → G(z) ∈ ℝ⁷⁸⁴
 Discriminator: x ∈ ℝ⁷⁸⁴ → D(x) ∈ [0,1]
 Trained for 50 epochs with batch size = 64 and lr = 0.0001
 ```
-n
+🔀 f-GAN
+Instead of minimizing the original GAN loss, we minimize f-divergences:
+
+BCE: Binary Cross Entropy (baseline)
+
+KLD: Kullback-Leibler Divergence
+
+JS: Jensen-Shannon Divergence
+
+Each divergence affects convergence behavior, quality, and diversity.
+
+🔍 Discriminator Rejection Sampling (DRS)
+DRS uses the discriminator’s confidence scores to accept or reject generated samples:
+
+Discriminator Scoring: Scores all generated images.
+
+Acceptance Probability: Uses sigmoid-adjusted function based on max score M and a hyperparameter γ.
+
+Dynamic Thresholding: M is updated online.
+
+Sample Selection: Repeats until 10,000 accepted samples are saved.
+
+📊 Results
+Model	Time (s)	FID	Precision	Recall
+Vanilla GAN	111.4	52.44	0.52	0.18
+F-GAN (JS, 100 epochs)	~	~	↑	↑
+F-GAN + DRS (KLD, 50e)	~	↓	↑↑	↑↑
+
+🔍 DRS significantly improved both precision and diversity compared to plain GANs.
+
+📁 Code Structure
+```bash
+├── fgan.py                  # F-GAN training logic
+├── drs.py                   # Discriminator Rejection Sampling implementation
+├── utils.py                 # Evaluation, divergence functions, helpers
+├── train_vanilla.py         # Vanilla GAN baseline training
+├── plots/                   # Generated image outputs
+├── samples/                 # DRS-accepted images
+├── README.md                # You're here!
+```
