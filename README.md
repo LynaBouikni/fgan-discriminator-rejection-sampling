@@ -121,15 +121,15 @@ Azadi et al., Discriminator Rejection Sampling
 ## 👥 Authors
 The GANtastics
 
-Lyna Bouikni
+* Lyna Bouikni
 
-Arij Boubaker
+* Arij Boubaker
 
-Ángel Luque
+* Ángel Luque
 
 🧑‍🎓 M2 IASD — ENS, Dauphine, Mines Paris, 2023
 
-📬 Contact
+## 📬 Contact
 📫 Email: lynabouiknia@gmail.com
 🔗 LinkedIn
 
