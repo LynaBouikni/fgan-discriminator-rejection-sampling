@@ -125,7 +125,7 @@ Arij Boubaker
 
 Ángel Luque
 
-🧑‍🎓 M2 IASD — Université Paris Dauphine, 2023
+🧑‍🎓 M2 IASD — ENS, Dauphine, Mines Paris, 2023
 
 📬 Contact
 📫 Email: lynabouiknia@gmail.com
