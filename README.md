@@ -1,5 +1,4 @@
 # F-GAN with Discriminator Rejection Sampling
-# 🧪 F-GAN with Discriminator Rejection Sampling
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1.0-EE4C2C?logo=pytorch)](https://pytorch.org/)
