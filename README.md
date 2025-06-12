@@ -1,4 +1,9 @@
 # F-GAN with Discriminator Rejection Sampling
+# 🧪 F-GAN with Discriminator Rejection Sampling
+
+[![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.1.0-EE4C2C?logo=pytorch)](https://pytorch.org/)
+
 
 > Training GANs on MNIST · Variational Divergence Minimization · Rejection Sampling · Precision-Recall Trade-off
 
@@ -87,11 +92,13 @@ F-GAN + DRS (KLD, 50e)	~	↓	↑↑	↑↑
 ```
 🧾 Dependencies
 ```bash
-torch==2.0.1
 numpy==1.25.1
 scikit-learn==1.3.0
 scipy==1.11.1
-matplotlib
+tqdm==4.64.1
+torch==2.1.0+cu121
+torchvision==0.16.0+cu121
+matplotlib==3.8.1
 ```
 
 Install with:
